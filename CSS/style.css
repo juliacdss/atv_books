@@ -59,39 +59,58 @@ table {
         color: #868686;
     }
 
-    html header {
-        margin: 0 5vw 3vw 5vw;
+    html body a {
+        color: black;
+        text-decoration: none;
     }
 
-    html nav ul {
+    header {
+        margin: 2vw 3vw 3vw 3vw;
+    }
+
+    header nav {
         display: flex;
-        justify-content: right;
+        justify-content: space-between;
     }
 
-    header nav ul li{
-     margin: 1vw 5px 0 5px;
-     }
+    header nav ul{
+        display: flex;
+    }
 
-    header nav ul li.stories {
-        justify-content: left;
+    header nav a span {
+        font-weight: bold;
+    }
+
+    header nav ul li.atual {
         color: black;
      }
 
-     header nav ul li.atual {
+    header nav ul li {
+        padding: 0 2vw 0 2vw;
+    }
+
+    li.stories {
         color: black;
+        padding: 0 80vw 0 80vw;
+    }
+
+     li.stories strong {
+        font-weight: bold;
      }
+
+  
 
     section.primeira {
         color: black;
         display: flex;
-        padding: 0 10vw 0 10vw;
+        margin: 3vw 7vw 0 7vw;
     }
 
-    section h1 span {
+    section.primeira div h1 span {
         color: #47C183;
     }
 
-    section div p button {
+    section.primeira div p button {
         background-color: black;
         color: white;
         font-size: 2rem;
@@ -112,8 +131,8 @@ table {
         margin: 2vw 0 2vw 0;
     }
 
-    section.primeira div.texto {
-        padding: 5vw 0 0 5vw;
+    section.primeira div p a {
+        text-decoration: underline;
     }
 
     section div.background {
@@ -126,6 +145,8 @@ table {
         display: flex;
     }
 
+    /*formatação segunda section*/
+
     section.segunda {
         padding: 5vw 5vw 5vw 5vw;
     }
@@ -134,7 +155,7 @@ table {
         font-size: 2rem;
         color: black;
         font-weight: bold;
-        padding: 0vw 3vw 5vw 40vw;
+        padding: 0vw 3vw 5vw 35vw;
     }
 
     section.segunda p {
@@ -148,21 +169,27 @@ table {
         padding: 2vw 0 2vw 0;
     }
 
+    /*formatação terceira section*/
+
     section.terceira h2 {
         font-size: 2rem;
         color: black;
         font-weight: bold;
-        padding: 0vw 3vw 5vw 40vw;
+        padding: 0vw 4vw 5vw 31vw;
     }
 
     section.terceira {
         padding: 5vw 5vw 5vw 5vw;
     }
 
-    section.terceira div {
+    section.terceira div.experiments {
         color: black;
         display: flex;
         padding: 0 3vw 0 3vw;
+    }
+
+    section.terceira div {
+        margin: 0 3vw 0 3vw;
     }
 
     section.terceira p {
@@ -173,4 +200,28 @@ table {
 
     section.terceira p span {
         font-weight: bold;
+    }
+    
+    footer div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer div.footer1 {
+        color: black;
+        margin: 0 5vw 2vw 5vw;
+    }
+
+    footer div.footer2 {
+        padding: 0 5vw 0 5vw;
+    }
+
+    footer div.footer2 p {
+        display: flex;
+        padding: 0 2vw 0 2vw;
+    }
+
+    footer div.footer2 p a {
+        color: #868686;
+        text-decoration: underline;
     }
